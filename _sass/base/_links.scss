@@ -11,7 +11,8 @@ a {
 	outline: 0;
 	transition: color $fade-quick ease-out, box-shadow $fade-quick ease-out;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		color: $color-gray-50;
 	}
 }

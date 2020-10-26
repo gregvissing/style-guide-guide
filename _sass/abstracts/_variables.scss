@@ -32,7 +32,7 @@
  * Breakpoints................Global breakpoint definitions
  */
 
- /*------------------------------------*\
+/*------------------------------------*\
      #COLORS
  \*------------------------------------*/
 
@@ -41,6 +41,8 @@
  * 1) Main identifiable colors involved in creating the UI
  *    Feel free to add your brand's color palette here.
  */
+
+$color-red: #E00122;
 
 /**
  * Neutral Colors
@@ -56,6 +58,8 @@ $color-gray-60: #666;
 $color-gray-73: #444;
 $color-gray-93: #131313;
 $color-black: #000;
+
+$color-p-text: #222;
 
 /**
  * Utility Colors
@@ -79,10 +83,53 @@ $color-utility-warning-light: #fffecf;
     #TYPOGRAPHY
 \*------------------------------------*/
 
+@font-face {
+	font-family: "Rift Light";
+	font-style: italic;
+	font-display: swap;
+	src: url("/fonts/rift/rift-bolditalic.otf") format("open-type");
+}
+
+@font-face {
+	font-family: "Rift Bold";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/fonts/rift/rift-bolditalic.otf") format("open-type");
+}
+
 /**
  * Font Family
  */
-$font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$font: "Open Sans",
+sans-serif;
+
+h1,
+h2 {
+	font-family: "Rift Light",
+		sans-serif;
+	letter-spacing: 0.3px;
+	font-style: italic;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Rift Bold",
+		sans-serif;
+	letter-spacing: 0.3px;
+	font-style: italic;
+}
+
+h3 {
+	color: $color-red;
+}
+
+p,
+a {
+	font-family: $font;
+}
 
 /**
  * Font Sizing
@@ -125,10 +172,12 @@ $l-max-width-narrow: 36rem;
 $space: 1rem;
 
 $pad-compact: 0.3rem;
-$pad-normal: 1rem; /* 1 */
+$pad-normal: 1rem;
+/* 1 */
 $pad-comfortable: 1.4rem;
 
-$space-bullet-offset: 1.6rem; /* 2 */
+$space-bullet-offset: 1.6rem;
+/* 2 */
 
 
 

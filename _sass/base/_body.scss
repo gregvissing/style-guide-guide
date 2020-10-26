@@ -16,8 +16,13 @@ body {
 	background: $color-white;
 	font: 100%/1.5 $font;
 	-webkit-text-size-adjust: 100%;
-	color: $color-gray-73;
+	color: $color-p-text;
+	// $color-gray-73;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+}
+
+.hide {
+	display: none;
 }

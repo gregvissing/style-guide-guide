@@ -104,32 +104,7 @@ $color-utility-warning-light: #fffecf;
 $font: "Open Sans",
 sans-serif;
 
-h1,
-h2 {
-	font-family: "Rift Light",
-		sans-serif;
-	letter-spacing: 0.3px;
-	font-style: italic;
-}
 
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Rift Bold",
-		sans-serif;
-	letter-spacing: 0.3px;
-	font-style: italic;
-}
-
-h3 {
-	color: $color-red;
-}
-
-p,
-a {
-	font-family: $font;
-}
 
 /**
  * Font Sizing
